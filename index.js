@@ -1,8 +1,5 @@
-import retornaSerie from "./funções/retronaSerie.js";
+import retornaSerieDia from "./funções/retronaSerie.js";
 
-let hoje = new Date();
-let diaSemana = hoje.getDay();
-
-let serieDoDia = retornaSerie(diaSemana);
+let serieDoDia = retornaSerieDia();
 
 console.log("A série do dia é: " +serieDoDia)

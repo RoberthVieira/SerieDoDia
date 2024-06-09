@@ -1,9 +1,20 @@
+import retornaDiaSemana from './diaSemana.js';
+
 let serie = [
-    'WandaVsion', 'Loki', 'What if...?', 'The Walking Dead', 'Dark', 'The Last of Us', 'Sex Education'
+    'WandaVsion', 
+    'Loki',
+    'What if...?', 
+    'The Walking Dead', 
+    'Dark', 
+    'The Last of Us', 
+    'Sex Education'
 ];
 
-function retornaSerie(indexSerie) {
-    return serie[indexSerie]
-};
 
-export default retornaSerie;
+function retornaSerieDia(){
+    let diaSemana = retornaDiaSemana();
+    let serieDoDia = serie[diaSemana];
+    return serieDoDia;
+  }
+  
+  export default retornaSerieDia;
